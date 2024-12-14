@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 41, 41);
+    color: wheat;
+    height: 85px;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+        height: 61px;
+    }
+    
+}
+
+.gameinfo{
+    font-family: "Nunito", sans-serif;
+    padding: 0px 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .gameinfo{
+        font-family: "Nunito", sans-serif;
+        font-size: 13px;
+    }
+}
+
+.image img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.info{
+    font-size: 23px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 10vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    .box {
+        font-size: 15vw; /* Adjust font size for smaller screens */
+        height: 20vw; /* Adjust height for smaller screens */
+        width: 20vw; /* Adjust width for smaller screens */
+    }
+}
+
+.box:hover{
+    background: linear-gradient(135deg,#ffffff, #ffd9ff, #ffffff); 
+}
+
+.gameConationer{ 
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+@media screen and (max-width: 1000px) {
+    .gameConationer{
+          flex-wrap: wrap;
+    }
+}
+.con{
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 1000px) {
+    .con{
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+        font-family: "Poppins", sans-serif;
+        margin: 25px;
+    }
+}
+.bT{
+    border-top: 0;
+}
+.bL{
+    border-left: 0;
+}
+.bR{
+    border-right: 0;
+}
+.bB{
+    border-bottom: 0;
+}
+.Reset{
+    font-weight: 500;
+    border-radius: 7px;
+    background-color: #dac4da;
+    font-size: 15px;
+    padding: 9px 23px;
+    font-family: "Poppins", sans-serif;
+}
+.Reset:hover {
+    background-color: #d5a4d5;
+}
